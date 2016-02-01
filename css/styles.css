@@ -1,0 +1,21 @@
+#currentList{
+  /*display:none;*/
+}
+
+body{
+  background: url("../img/food.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/*=========
+list items
+==========*/
+.white-text {
+  color: white;
+}
+
+#list {
+  font-size: 18pt;
+  font-weight: bold;
+  color: white;
+}
