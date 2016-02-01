@@ -1,16 +1,29 @@
-#currentList{
-  /*display:none;*/
-}
 
+/*=======
+body
+=========*/
 body{
   background: url("../img/food.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
+form {
+  margin-top: 100px;
+}
+
+/*========
+Header
+==========*/
+/*.hero{
+  background: url('http://www.bonappetit.com/wp-content/uploads/2013/02/pok-pok-spread-520.jpg') no-repeat center;
+  background-size: cover;
+  width 100%;
+}*/
 /*=========
 list items
 ==========*/
 .white-text {
+  margin-top: 100px;
   color: white;
 }
 
@@ -18,4 +31,8 @@ list items
   font-size: 18pt;
   font-weight: bold;
   color: white;
+}
+
+#currentList{
+  /*display:none;*/
 }
