@@ -1,5 +1,6 @@
 var customers = [];
 
+
 function Restaurant(restaurantName) {
   this.restaurantName = restaurantName;
   this.customerList = [];
@@ -50,3 +51,29 @@ Customer.prototype.waitTime = function() {
       return time;
   }
 }
+
+$(document).ready(function(){
+  $('#review-btn').click(function(){
+    $('#new-input').show();
+    $('#review-btn').hide();
+  });
+
+  $("form#new-input").submit(function(event) {
+   event.preventDefault();
+   debugger;
+   var customerName = $("input#name").val();
+   var phoneNumber = $("input#phone").val();
+   var partySize = $("input#party").val();
+   var newCustomer = new Customer(customerName, phoneNumber, partySize);
+   var newRestaurant = new Restaurant('Screen Door');
+
+   var custArr = newCustomer.customerInfo();
+   var custArrList =  newRestaurant.restaurantList(custArr);
+   console.log(custArrList);
+
+  $('ul#list').append('<li>' + newCustomer.customerName + "</li>");
+  $("ul#list li").click(function(){
+    $(this).remove();
+  });
+  });
+});

@@ -1,0 +1,36 @@
+
+/*=======
+body
+=========*/
+body{
+  background: url("../img/food.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+form {
+  margin-top: 100px;
+}
+
+/*========
+Header
+==========*/
+#new-input{
+  display: none;
+}
+/*=========
+list items
+==========*/
+.white-text {
+  margin-top: 100px;
+  color: white;
+}
+
+#list {
+  font-size: 18pt;
+  font-weight: bold;
+  color: white;
+}
+
+#currentList{
+  /*display:none;*/
+}
