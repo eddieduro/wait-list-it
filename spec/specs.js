@@ -13,6 +13,17 @@ describe("Customer", function() {
   });
   it ("returns a wait time based on customer party size.", function() {
     var newCustomer = new Customer("Bob", "503-999-9999", 2);
-    expect(newCustomer.waitTime(3)).to.equal(30);
+    expect(newCustomer.waitTime()).to.equal(30);
   });
+});
+
+describe("Restaurant", function() {
+  it ("create restaurant constructor with customer.", function() {
+    var newRestaurant = new Restaurant();
+    expect(newRestaurant.customerList).to.eql([]);
+  });
+  // it ("", function() {
+  //   var newRestaurant = new Restaurant();
+  //   expect(newRestaurant.customer()).to.eql([["Bob","503-999-9999",2]]);
+  // });
 });

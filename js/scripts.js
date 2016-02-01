@@ -1,3 +1,12 @@
+function Restaurant() {
+  this.customerList = [];
+}
+
+// Restaurant.prototype.customer = function() {
+//   this.customerList.push(customers);
+//   console.log(customerList);
+// }
+
 var customers = [];
 
 function Customer(customerName, phoneNumber, partySize) {
@@ -5,6 +14,7 @@ function Customer(customerName, phoneNumber, partySize) {
   this.phoneNumber = phoneNumber;
   this.partySize = partySize;
 }
+
 
 Customer.prototype.customerInfo = function() {
   customers.push([this.customerName,this.phoneNumber,this.partySize]);
