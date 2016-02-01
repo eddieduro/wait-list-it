@@ -3,11 +3,13 @@ function Restaurant(restaurantName) {
   this.customerList = [];
 }
 
-// Restaurant.prototype.restaurantList = function() {
-//   this.customerList.push(customers);
-//   return this.customerList;
-//   // console.log(this.customerList);
-// }
+Restaurant.prototype.restaurantList = function() {
+  for (var i = 0; i < customers.length; i++) {
+    this.customerList.push(customers[i]);
+  }
+  console.log(this.customerList);
+  return this.customerList;
+}
 
 var customers = [];
 
