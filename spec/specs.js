@@ -18,12 +18,15 @@ describe("Customer", function() {
 });
 
 describe("Restaurant", function() {
-  it ("create restaurant constructor with customer.", function() {
-    var newRestaurant = new Restaurant();
+  it ("create restaurant constructor with restaurant name and customer list.", function() {
+    var newRestaurant = new Restaurant("Pizzacato");
+    expect(newRestaurant.restaurantName).to.equal("Pizzacato");
     expect(newRestaurant.customerList).to.eql([]);
   });
   // it ("", function() {
+  //
   //   var newRestaurant = new Restaurant();
-  //   expect(newRestaurant.customer()).to.eql([["Bob","503-999-9999",2]]);
+  //       console.log(newRestaurant.restaurantList());
+  //   expect(newRestaurant.restaurantList()).to.eql();
   // });
 });

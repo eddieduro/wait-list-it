@@ -1,10 +1,12 @@
-function Restaurant() {
+function Restaurant(restaurantName) {
+  this.restaurantName = restaurantName;
   this.customerList = [];
 }
 
-// Restaurant.prototype.customer = function() {
+// Restaurant.prototype.restaurantList = function() {
 //   this.customerList.push(customers);
-//   console.log(customerList);
+//   return this.customerList;
+//   // console.log(this.customerList);
 // }
 
 var customers = [];
