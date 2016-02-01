@@ -11,4 +11,8 @@ describe("Customer", function() {
     expect(newCustomer.customerInfo()).to.eql([["Bob","503-999-9999",2]]);
     expect(newCustomer2.customerInfo()).to.eql([["Bob","503-999-9999",2],["Tom","503-999-9999",5]]);
   });
+  it ("returns a wait time based on customer party size.", function() {
+    var newCustomer = new Customer("Bob", "503-999-9999", 2);
+    expect(newCustomer.waitTime(3)).to.equal(30);
+  });
 });
