@@ -1,3 +1,5 @@
+var customers = [];
+
 function Customer(customerName, phoneNumber, partySize) {
   this.customerName = customerName;
   this.phoneNumber = phoneNumber;
@@ -5,5 +7,6 @@ function Customer(customerName, phoneNumber, partySize) {
 }
 
 Customer.prototype.customerInfo = function() {
-  return (this.customerName + ", " + this.phoneNumber + ", " + this.partySize);
+  customers.push([this.customerName,this.phoneNumber,this.partySize]);
+  return customers;
 }

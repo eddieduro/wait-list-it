@@ -7,6 +7,8 @@ describe("Customer", function() {
   });
   it ("concat name, phone number, and party size.", function() {
     var newCustomer = new Customer("Bob", "503-999-9999", 2);
-    expect(newCustomer.customerInfo()).to.equal("Bob, 503-999-9999, 2");
+    var newCustomer2 = new Customer("Tom", "503-999-9999", 5);
+    expect(newCustomer.customerInfo()).to.eql([["Bob","503-999-9999",2]]);
+    expect(newCustomer2.customerInfo()).to.eql([["Bob","503-999-9999",2],["Tom","503-999-9999",5]]);
   });
 });
