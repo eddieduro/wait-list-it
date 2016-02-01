@@ -1,47 +1,4 @@
-<<<<<<< HEAD
-$(document).ready(function(){
-  $("#add-reservation").click(function(event) {
-      event.preventDefault();
-      $("ul#list").append("<li>Bob</li>");
-    });
 
-  $("ul#list li").click(function(){
-    $(this).remove();
-  });
------------------------------------------------------
-  $("form#new-input").submit(function(event) {
-   event.preventDefault();
-
-   var customerName = $("input#name").val();
-   var phoneNumber = $("input#phone").val();
-   var partySize = $("input#party").val();
-
-   $(".new-address").each(function() { //new address function
-     var inputtedStreet = $(this).find("input.new-street").val();
-     var inputtedCity = $(this).find("input.new-city").val();
-     var inputtedState = $(this).find("input.new-state").val();
-     var newAddress = new Address(inputtedStreet, inputtedCity, inputtedState)
-     newContact.addresses.push(newAddress)
-   });
-
-   $("ul#contacts").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");
-
-   $(".contact").last().click(function() {
-   $("#show-contact").show();
-   $("#show-contact h2").text(newContact.fullName());
-   $(".first-name").text(newContact.firstName);
-   $(".last-name").text(newContact.lastName);
-   newContact.addresses.forEach(function(address) {
-     $("ul#addresses").append("<li>" + address.fullAddress() + "</li>");
-     });
-   });
-
-   resetFields();
-
- });
-
-});
-=======
 function Restaurant(restaurantName) {
   this.restaurantName = restaurantName;
   this.customerList = [];
@@ -83,4 +40,29 @@ Customer.prototype.waitTime = function() {
       }
     }
 }
->>>>>>> 1ca8ac410dbb79a69d00e9e6e18f01eac5bbab95
+
+$(document).ready(function(){
+  $('#review-btn').click(function(){
+    $('#new-input').show();
+    $('#review-btn').hide();
+  });
+
+  $("form#new-input").submit(function(event) {
+   event.preventDefault();
+   debugger;
+   var customerName = $("input#name").val();
+   var phoneNumber = $("input#phone").val();
+   var partySize = $("input#party").val();
+   var newCustomer = new Customer(customerName, phoneNumber, partySize);
+   var newRestaurant = new Restaurant('Screen Door');
+
+   var custArr = newCustomer.customerInfo();
+   var custArrList =  newRestaurant.restaurantList(custArr);
+   console.log(custArrList);
+
+  $('ul#list').append('<li>' + newCustomer.customerName + "</li>");
+  $("ul#list li").click(function(){
+    $(this).remove();
+  });
+  });
+});

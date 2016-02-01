@@ -14,11 +14,9 @@ form {
 /*========
 Header
 ==========*/
-/*.hero{
-  background: url('http://www.bonappetit.com/wp-content/uploads/2013/02/pok-pok-spread-520.jpg') no-repeat center;
-  background-size: cover;
-  width 100%;
-}*/
+#new-input{
+  display: none;
+}
 /*=========
 list items
 ==========*/
