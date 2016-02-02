@@ -3,17 +3,32 @@
 body
 =========*/
 body{
-  background: url("../img/food.jpg") no-repeat center center fixed;
-  background-size: cover;
+/*  background: url("../img/food.jpg") no-repeat center center fixed;
+  background-size: cover;*/
 }
 
 form {
   margin-top: 100px;
 }
 
-/*========
+/*==========
 Header
+============*/
+.hero {
+  background: url('../img/ramen.jpg') no-repeat center;
+  background-size: conver;
+  height: 400px;
+  width: 100%;
+}
+/*========
+form
 ==========*/
+.flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}  
 #new-input{
   display: none;
 }
