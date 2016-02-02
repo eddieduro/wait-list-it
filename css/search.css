@@ -1,0 +1,8 @@
+header i {
+  display: none !important;
+}
+
+#arrow {
+  display: inline !important;
+  cursor: pointer;
+}

@@ -5,7 +5,15 @@
     <title></title>
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="https://code.getmdl.io/1.1.0/material.teal-green.min.css">
+	  <link rel="stylesheet" href="https://code.getmdl.io/1.1.0/material.teal-green.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+
+
+
+<link href="tipuesearch/tipuesearch.css" rel="stylesheet">
+<script src="tipuesearch/tipuesearch_set.js"></script>
+
+
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
@@ -20,7 +28,10 @@
 	      <div class="mdl-layout-spacer"></div>
 	      <!-- Navigation. We hide it in small screens. -->
 	      <nav class="mdl-navigation">
-	        <i class="material-icons">search</i>
+          <form action="search.html" id="search">
+            <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+          </form>
+
 	      </nav>
 	    </div>
 	  </header>
@@ -56,8 +67,10 @@
     <div class="flexbox">
       <button type="button" id="review-btn" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect" >Get on the list!</button>
     </div>
+    <!-- Search results -->
+    <div id="tipue_search_content"></div>
     <!-- Form -->
-    <div class="flexboxForm">  
+    <div class="flexboxForm">
         <form id="new-input" action="#">
           <div class="mdl-textfield mdl-js-textfield">
             <label for="name" class="mdl-textfield__label">Name:</label>
@@ -88,7 +101,7 @@
 	    <div class="flexRate">
 	    	<h3>Rate your experience</h3>
 	    </div>
-	    
+
 	    <div class="flexHr">
 	    	<hr id="rating">
 	    </div>
@@ -100,10 +113,15 @@
 	    	<i class="material-icons star">&#xE83A;</i>
 	    </div>
     </div>
+
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="tipuesearch/tipuesearch_content.js"></script>
+    <script src="tipuesearch/tipuesearch_set.js"></script>
+    <script src="tipuesearch/tipuesearch.min.js"></script>
     <!--<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
     <script src="https://code.getmdl.io/1.1.0/material.min.js"></script>
-    <script type="text/javascript" src="js/scripts.js">
+    <script type="text/javascript" src="js/scripts.js"></script>
     </script>
   </body>
 </html>
