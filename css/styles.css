@@ -70,6 +70,55 @@ list items
   padding-left: 3%; 
 }
 
+.mdl-list__item{
+  line-height: 24px;
+}
 #currentList{
   /*display:none;*/
 }
+/*==========
+Rating section
+============*/
+.rateBg{
+  height: 400px;
+  widht: 100%;
+  background-color: #bfbfbf;
+}
+.flexRate{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.flexHr{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+} 
+
+.flexStar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.star {
+  font-size: 36pt;
+  cursor: pointer;
+}
+
+.starOverlay{
+  color: gold;
+}
+hr#rating {
+  width: 50%;
+}
+
+
+
+
+
+
