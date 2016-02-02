@@ -30,7 +30,6 @@ Customer.prototype.waitTime = function() {
 
   for(var i=0; i < customers.length; i++) {
     parties.push(customers[i][2]);
-    console.log(parties);
     }
 
   for(var k=0; k < parties.length; k++) {
@@ -70,7 +69,7 @@ $(document).ready(function(){
    var custArrList =  newRestaurant.restaurantList(custArr);
    
 
-  $('ul#list').append('<li>' + newCustomer.customerName + "</li>");
+  $('ul#list').append('<li class="mdl-list__item">' + newCustomer.customerName + "</li>");
   $('#time').text(newCustomer.waitTime() + "minutes");
   $("ul#list li").click(function(){
     $(this).remove();

@@ -9,12 +9,35 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
+	<!-- NavBar -->
+  	<!-- Always shows a header, even in smaller screens. -->
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+	  <header class="mdl-layout__header">
+	    <div class="mdl-layout__header-row">
+	      <!-- Title -->
+	      <span class="mdl-layout-title">Boxer Ramen</span>
+	      <!-- Add spacer, to align navigation to the right -->
+	      <div class="mdl-layout-spacer"></div>
+	      <!-- Navigation. We hide it in small screens. -->
+	      <nav class="mdl-navigation">
+	        <i class="material-icons">search</i>
+	      </nav>
+	    </div>
+	  </header>
+	  <div class="mdl-layout__drawer">
+	    <span class="mdl-layout-title">Title</span>
+	    <nav class="mdl-navigation">
+	     
+	    </nav>
+	  </div>
+	</div>
+  <!-- Hero -->
+	<div class="hero">
+		<!--  <h1>Screen Door</h1>
+	    <h2>Reserve Your Table!!!</h2>
+	    <p>Enter your name, party size, and phone# and we will let you know how many people are in front of you and approxiamtely how long you will have to wait for your table.</p> -->
+	</div>
 
-      <div class="hero">
-       <!--  <h1>Screen Door</h1>
-        <h2>Reserve Your Table!!!</h2>
-        <p>Enter your name, party size, and phone# and we will let you know how many people are in front of you and approxiamtely how long you will have to wait for your table.</p> -->
-      </div>
     <div class="sideBar">
       <div class="menuItems">
         <ul>
@@ -23,16 +46,16 @@
       </div>
     </div>
 
-    <div class="container">
-      <h2 class="white-text">Current Wait Time: <span id="time"></span></h2>
+    <div class="flexboxWait">
+      <h2 class="wait-text">Current Wait Time: <span id="time"></span></h2>
     </div>
 
     <!-- Get on the list  -->
-    <div class="container">
-      <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect" id="review-btn">Get on the list!</button>
+    <div class="flexbox">
+      <button type="button" id="review-btn" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect" >Get on the list!</button>
     </div>
     <!-- Form -->
-    <div class="flexbox">  
+    <div class="flexboxForm">  
         <form id="new-input" action="#">
           <div class="mdl-textfield mdl-js-textfield">
             <label for="name" class="mdl-textfield__label">Name:</label>
@@ -50,19 +73,18 @@
         </form>
       </div>
     </div>
-
-
-
-    <div class="container">
+    <!-- List -->
+    <div class="flexboxList">
       <div id="currentList">
-        <ul id="list">
+        <ul id="list" class="demo-list-item mdl-list">
 
         </ul>
       </div>
     </div>
+    <!-- rate your experience -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <!--<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
-    <script defer src="https://code.getmdl.io/1.1.0/material.min.js"></script>
+    <script src="https://code.getmdl.io/1.1.0/material.min.js"></script>
     <script type="text/javascript" src="js/scripts.js">
     </script>
   </body>

@@ -17,17 +17,34 @@ Header
 .hero {
   background: url('../img/ramen.jpg') no-repeat center;
   background-size: conver;
-  height: 400px;
-  width: 100%;
+  padding-top: 100px; 
+  height: 300px;
+  max-width: 100%;
+}
+/*========
+Wait time
+==========*/
+.flexboxWait {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
 }
 /*========
 form
 ==========*/
-.flexbox {
+.flexbox{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: 100px;
+}
+.flexboxForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0px;
+  padding-bottom: 100px;
 }  
 #new-input{
   display: none;
@@ -35,15 +52,22 @@ form
 /*=========
 list items
 ==========*/
-.white-text {
+.flexboxList{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.wait-text {
   margin-top: 100px;
-  color: white;
+  color: black;
 }
 
 #list {
   font-size: 18pt;
   font-weight: bold;
-  color: white;
+  color: black;
+  padding-left: 3%; 
 }
 
 #currentList{
