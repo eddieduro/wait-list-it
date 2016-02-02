@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/tilt-styles.css">
+  </head>
+  <body>
+
+    <div class="container">
+
+      <div class="jumbotron">
+      <p><img src="img/tilt-logo.png" id="tilt-logo-img"></p>
+
+      </div>
+      <div class="row">
+        <div class="col-sm-6" id="left-column">
+          <img src="img/tilt-menu.png">
+        </div>
+        <div class="col-sm-6" id="right-column">
+          <form id="new-input" action="#">
+            <h4>Looking to dine in? Add yourself to our waitlist:</h4>
+            <hr>
+            <div>
+              <label for="name">Name:</label>
+              <input type="text" id="name">
+            </div>
+            <br>
+            <div>
+              <label for="party">Party Size:</label>
+              <input type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="party">
+            </div>
+            <br>
+            <div>
+              <label for="phone">Phone #:</label>
+              <input type="phone" id="phone">
+            </div>
+            <br>
+            <button type="submit" id="add-reservation" class="btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!--<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+    <script src="https://code.getmdl.io/1.1.0/material.min.js"></script>
+    <script type="text/javascript" src="js/tilt-scripts.js">
+    </script>
+  </body>
+</html>

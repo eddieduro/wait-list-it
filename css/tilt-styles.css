@@ -1,0 +1,15 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.jumbotron {
+  background-color: black;
+  text-align: center;
+  width: 100%;
+}
+
+#tilt-logo-img {
+  width: 300px;
+  height: auto;
+}
