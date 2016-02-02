@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	  <link rel="stylesheet" href="https://code.getmdl.io/1.1.0/material.teal-green.min.css"> -->
+    <link rel="stylesheet" href="css/e-san-styles.css">
+  </head>
+  <body>
+
+    <div class="container">
+
+      <div class="jumbotron">
+      <h1>E-San Thai Cuisine</h1>
+      <p><img src="http://www.e-santhai.com/images/logo.jpg"></p>
+
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <hr>
+          <p><strong>About E-San</strong><br><br>
+
+            Thais from the Northeast section of Thailand, Issan (or Esan), consider themselves Lao, and historically this part of Thailand and Laos have very close connections reflected in the music, dress and of course the food. E-San's chef, Ting Pathammavong, was raised there, and now she blends her own variations of recipes from her traditional land. <span id="about-show"><em>(click for more)</em></span><br>
+
+            <span id = "about-hide">For over 10 years, Ting worked in the kitchen of just about every Thai restaurant in Portland before a friend suggested that she and her husband, Mao, open up their own. That was over 6 years ago, and if asked about it, Mao smiles and says he still loves it, and would rather be at work than at home. He jokingly says that when he is at home, his twin daughters play with each other, leaving him nothing to do.<br>
+
+            When asked what makes his restaurant voted "Portland's Best," he simply says, "We use only fresh ingredients. We can't be open for breakfast, because we spend the morning buying the food for that day."<br>
+
+            He also says he has a wonderful staff, and says, "We're really happy here. And a happy staff makes a happy customer. Some have even been with me from the beginning." It's true, his bartender, Raphael Rodriguez, was working the downtown restaurant when Mao bought the place. It is difficult to stump Raphael with even obscure drinks.<br>
+
+            Recently, Mao's sister, Air, came over from Thailand to help him open up E-San's second location just off of Northwest 23rd. When asked what the future holds for E-San, Mao said, "Well, my other sister just graduated from the Culinary Institute in Esan, and will soon be coming over to help out." Even with multiple locations, E-San is still family owned and operated.</span></p>
+        </div>
+        <div class="col-sm-4">
+          <form id="new-input" action="#">
+            <div>
+              <label for="name">Name:</label>
+              <input type="text" id="name">
+            </div>
+            <div>
+              <label for="party">Party Size:</label>
+              <input type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="party">
+            </div>
+            <div>
+              <label for="phone">Phone #:</label>
+              <input type="phone" id="phone">
+            </div>
+            <button type="submit" id="add-reservation" class="btn">Submit</button>
+          </form>
+          <button type="button" id="review-btn" class="btn" >Waitlist</button>
+          <p class="wait-text">Your current wait time is: <span id="time"></span></p>
+
+        </div>
+        <div class="col-sm-4">
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Form -->
+    <div class="flexboxForm">
+        <form id="new-input" action="#">
+          <div class="mdl-textfield mdl-js-textfield">
+            <label for="name" class="mdl-textfield__label">Name:</label>
+            <input type="text" class="mdl-textfield__input" id="name">
+          </div>
+          <div class="mdl-textfield mdl-js-textfield">
+            <label for="party" class="mdl-textfield__label">Party Size:</label>
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="party">
+          </div>
+          <div class="mdl-textfield mdl-js-textfield">
+            <label for="phone" class="mdl-textfield__label">Phone #:</label>
+            <input type="phone" class="mdl-textfield__input" id="phone">
+          </div>
+          <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect" id="add-reservation">Submit</button>
+        </form>
+      </div>
+    </div>
+    <!-- List -->
+    <div class="flexboxList">
+      <div id="currentList">
+        <ul id="list" class="demo-list-item mdl-list">
+
+        </ul>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!--<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+    <script src="https://code.getmdl.io/1.1.0/material.min.js"></script>
+    <script type="text/javascript" src="js/e-san-scripts.js">
+    </script>
+  </body>
+</html>
