@@ -10,14 +10,19 @@ body{
 form {
   margin-top: 100px;
 }
-
+/*==========
+nav
+============*/
+#search{
+  margin-top: 0px;
+}
 /*==========
 Header
 ============*/
 .hero {
   background: url('../img/ramen.jpg') no-repeat center;
   background-size: conver;
-  padding-top: 100px; 
+  padding-top: 100px;
   height: 300px;
   max-width: 100%;
 }
@@ -45,7 +50,7 @@ form
   align-items: center;
   height: 0px;
   padding-bottom: 100px;
-}  
+}
 #new-input{
   display: none;
 }
@@ -67,7 +72,7 @@ list items
   font-size: 18pt;
   font-weight: bold;
   color: black;
-  padding-left: 3%; 
+  padding-left: 3%;
 }
 
 .mdl-list__item{
@@ -96,7 +101,7 @@ Rating section
   justify-content: center;
   align-items: center;
   height: 50px;
-} 
+}
 
 .flexStar{
   display: flex;
@@ -116,9 +121,3 @@ Rating section
 hr#rating {
   width: 50%;
 }
-
-
-
-
-
-
