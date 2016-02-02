@@ -1,0 +1,40 @@
+/*=====
+Hero
+=======*/
+#heroImg{
+  background: url('../img/foodHero.jpeg') center no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
+.flexboxHero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+
+/*#iphone {
+  background: url('../img/iphone.gif') no-repeat;
+  background-size: contain;
+  height: 400px;
+  width: 100%;
+  display: inline;
+  position: absolute;
+}*/
+#heroFont {
+  color: white;
+  font-size: 80pt;
+}
+
+.flexboxBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0px;
+}
+
+#heroBtn1{
+  display: block;
+  top: -100px;
+}
