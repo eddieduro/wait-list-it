@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.1.0/material.teal-green.min.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
@@ -24,30 +26,30 @@
     </div>
 
     <div class="container">
-      <h2 class="white-text">Current Wait Time: 60 mins</h2>
+      <h2 class="white-text">Current Wait Time: <span id="time"></span></h2>
     </div>
 
     <!-- Get on the list  -->
     <div class="container">
-      <button type="button" class="btn btn-warning" id="review-btn">Get on the list!</button>
+      <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect" id="review-btn">Get on the list!</button>
     </div>
     <!-- Form -->
-    <div class="container">
-      <div class="text-center">
-        <form id="new-input" role="form">
-          <div class="form-group">
-            <label for="name ">Name:</label>
-            <input type="text" class="form-control" id="name">
+    <div class="flexbox">
+      
+        <form id="new-input" action="#">
+          <div class="mdl-textfield mdl-js-textfield">
+            <label for="name" class="mdl-textfield__label">Name:</label>
+            <input type="text" class="mdl-textfield__input" id="name">
           </div>
-          <div class="form-group">
-            <label for="party">Party Size:</label>
-            <input type="text" class="form-control" id="party">
+          <div class="mdl-textfield mdl-js-textfield">
+            <label for="party" class="mdl-textfield__label">Party Size:</label>
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="party">
           </div>
-          <div class="form-group">
-            <label for="phone">Phone #:</label>
-            <input type="phone" class="form-control" id="phone">
+          <div class="mdl-textfield mdl-js-textfield">
+            <label for="phone" class="mdl-textfield__label">Phone #:</label>
+            <input type="phone" class="mdl-textfield__input" id="phone">
           </div>
-          <button type="submit" class="btn btn-danger btn-lg" id="add-reservation">Submit</button>
+          <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect" id="add-reservation">Submit</button>
         </form>
       </div>
     </div>
@@ -62,7 +64,8 @@
       </div>
     </div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!--<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+    <script defer src="https://code.getmdl.io/1.1.0/material.min.js"></script>
     <script type="text/javascript" src="js/scripts.js">
     </script>
   </body>

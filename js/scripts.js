@@ -60,7 +60,6 @@ $(document).ready(function(){
 
   $("form#new-input").submit(function(event) {
    event.preventDefault();
-   debugger;
    var customerName = $("input#name").val();
    var phoneNumber = $("input#phone").val();
    var partySize = $("input#party").val();
@@ -69,9 +68,10 @@ $(document).ready(function(){
 
    var custArr = newCustomer.customerInfo();
    var custArrList =  newRestaurant.restaurantList(custArr);
-   console.log(custArrList);
+   
 
   $('ul#list').append('<li>' + newCustomer.customerName + "</li>");
+  $('#time').text(newCustomer.waitTime() + "minutes");
   $("ul#list li").click(function(){
     $(this).remove();
   });
