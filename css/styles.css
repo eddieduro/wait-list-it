@@ -3,34 +3,122 @@
 body
 =========*/
 body{
-  background: url("../img/food.jpg") no-repeat center center fixed;
-  background-size: cover;
+/*  background: url("../img/food.jpg") no-repeat center center fixed;
+  background-size: cover;*/
 }
 
 form {
   margin-top: 100px;
 }
 
-/*========
+/*==========
 Header
+============*/
+.hero {
+  background: url('../img/ramen.jpg') no-repeat center;
+  background-size: conver;
+  padding-top: 100px; 
+  height: 300px;
+  max-width: 100%;
+}
+/*========
+Wait time
 ==========*/
+.flexboxWait {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+/*========
+form
+==========*/
+.flexbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.flexboxForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0px;
+  padding-bottom: 100px;
+}  
 #new-input{
   display: none;
 }
 /*=========
 list items
 ==========*/
-.white-text {
+.flexboxList{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.wait-text {
   margin-top: 100px;
-  color: white;
+  color: black;
 }
 
 #list {
   font-size: 18pt;
   font-weight: bold;
-  color: white;
+  color: black;
+  padding-left: 3%; 
 }
 
+.mdl-list__item{
+  line-height: 24px;
+}
 #currentList{
   /*display:none;*/
 }
+/*==========
+Rating section
+============*/
+.rateBg{
+  height: 400px;
+  widht: 100%;
+  background-color: #bfbfbf;
+}
+.flexRate{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.flexHr{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+} 
+
+.flexStar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.star {
+  font-size: 36pt;
+  cursor: pointer;
+}
+
+.starOverlay{
+  color: gold;
+}
+hr#rating {
+  width: 50%;
+}
+
+
+
+
+
+

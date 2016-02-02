@@ -30,7 +30,6 @@ Customer.prototype.waitTime = function() {
 
   for(var i=0; i < customers.length; i++) {
     parties.push(customers[i][2]);
-    console.log(parties);
     }
 
   for(var k=0; k < parties.length; k++) {
@@ -59,21 +58,25 @@ $(document).ready(function(){
   });
 
   $("form#new-input").submit(function(event) {
-   event.preventDefault();
-   debugger;
-   var customerName = $("input#name").val();
-   var phoneNumber = $("input#phone").val();
-   var partySize = $("input#party").val();
-   var newCustomer = new Customer(customerName, phoneNumber, partySize);
-   var newRestaurant = new Restaurant('Screen Door');
+    event.preventDefault();
+    var customerName = $("input#name").val();
+    var phoneNumber = $("input#phone").val();
+    var partySize = $("input#party").val();
+    var newCustomer = new Customer(customerName, phoneNumber, partySize);
+    var newRestaurant = new Restaurant('Screen Door');
 
-   var custArr = newCustomer.customerInfo();
-   var custArrList =  newRestaurant.restaurantList(custArr);
-   console.log(custArrList);
+    var custArr = newCustomer.customerInfo();
+    var custArrList =  newRestaurant.restaurantList(custArr);
+     
 
-  $('ul#list').append('<li>' + newCustomer.customerName + "</li>");
-  $("ul#list li").click(function(){
-    $(this).remove();
+
+    $('ul#list').append('<li class="mdl-list__item"> Thanks ' + newCustomer.customerName + ", you have been added to the list!</li>");
+    $('#time').text(newCustomer.waitTime() + "minutes");
+    $("ul#list li").click(function(){
+      $(this).remove();
+    });
   });
+  $('.star').hover(function(){
+    $(this).addClass("starOverlay");
   });
 });
