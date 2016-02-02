@@ -1,10 +1,15 @@
-
-/*=======
-body
-=========*/
 body{
   background-color: #732727;
   color: black;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid black;
+    margin: 1em 0;
+    padding: 0;
 }
 
 .jumbotron {
@@ -12,12 +17,6 @@ body{
   color: red;
   text-shadow: 1px 1px 1px black;
   background-image: url("http://static1.squarespace.com/static/53835c67e4b0b3a648f0036d/t/539f889ee4b063c45911eaf6/1374002907458/IMG_4224-retouch.jpg");
-}
-
-
-
-hr {
-  color: black;
 }
 
 .btn {
@@ -37,8 +36,13 @@ hr {
   background: #f5e3bf;
 }
 
+#center-div {
+  text-align: center;
+}
 
-
+#time {
+  font-size: 16pt;
+}
 
 #about-hide {
   display: none;
@@ -48,42 +52,8 @@ hr {
   display: none;
 }
 
-/*==========
-Header
-============*/
-.hero {
-  background: url('../img/ramen.jpg') no-repeat center;
-  background-size: conver;
-  padding-top: 100px;
-  height: 300px;
-  max-width: 100%;
-}
-
-
-/*=========
-list items
-==========*/
-.flexboxList{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-}
-.wait-text {
-  margin-top: 100px;
-  color: black;
-}
-
 #list {
-  font-size: 18pt;
-  font-weight: bold;
+  font-size: 16pt;
   color: black;
   padding-left: 3%;
-}
-
-.mdl-list__item{
-  line-height: 24px;
-}
-#currentList{
-  /*display:none;*/
 }

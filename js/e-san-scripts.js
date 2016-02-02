@@ -84,7 +84,4 @@ $(document).ready(function(){
       $(this).remove();
     });
   });
-  $('.star').hover(function(){
-    $(this).addClass("starOverlay");
-  });
 });
