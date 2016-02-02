@@ -16,7 +16,7 @@ Restaurant.prototype.restaurantList = function() {
   for (var i = 0; i < customers.length; i++) {
     this.customerList.push(customers[i]);
   }
-  // return this.customerList;
+  return this.customerList;
 }
 
 Customer.prototype.customerInfo = function() {
