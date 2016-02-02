@@ -137,3 +137,12 @@ Rating section
 hr#rating {
   width: 50%;
 }
+/*==========
+Blog section
+============*/
+.mdl-card {
+   width: 70%;
+   margin-left: 10%;
+   margin-top: 3%;
+   padding: 10px;
+}
