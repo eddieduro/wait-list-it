@@ -35,6 +35,13 @@ Header
   height: 350px;
   max-width: 100%;
 }
+.pokpok {
+  background: url('../img/pokpok.jpg') no-repeat center;
+  background-size: cover;
+  padding-top: 100px;
+  height: 350px;
+  max-width: 100%;
+}
 /*========
 Wait time
 ==========*/
