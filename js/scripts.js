@@ -16,7 +16,7 @@ Restaurant.prototype.restaurantList = function() {
   for (var i = 0; i < customers.length; i++) {
     this.customerList.push(customers[i]);
   }
-  return this.customerList;
+  // return this.customerList;
 }
 
 Customer.prototype.customerInfo = function() {
@@ -28,27 +28,24 @@ Customer.prototype.waitTime = function() {
   var parties = [];
   var time = 0;
 
-  for(var i=0; i < customers.length; i++) {
+  for(var i = 0; i < customers.length; i++) {
     parties.push(customers[i][2]);
     }
 
-  for(var k=0; k < parties.length; k++) {
-    if (parties[k] === 2 || parties[k] === 1) {
-      time = 3;
+  for(var k = 0; k < parties.length; k++) {
+      if (parties[k] === 2 || parties[k] === 1) {
+        time = 3;
+      } else if ((parties[k] > 2) &&  (parties[k] <= 4)) {
+        time = 5;
+      } else if ((parties[k] > 4 )&& (parties[k] <= 6)) {
+        time = 7;
+      } else if (parties[k] > 7) {
+        time = 9;
+      }
     }
-    if ((parties[k] > 2) &&  (parties[k] <= 4)) {
-      time = 5;
-    }
-    if ((parties[k] > 4 )&& (parties[k] <= 6)) {
-      time = 7;
-    }
-    if (parties[k] > 7) {
-      time = 9;
-    }
-      time += i * 5;
-      console.log(time);
-      return time;
-  }
+  time += i * 5;
+  console.log(time);
+  return time;
 }
 
 $(document).ready(function(){
@@ -61,17 +58,17 @@ $(document).ready(function(){
     event.preventDefault();
     var customerName = $("input#name").val();
     var phoneNumber = $("input#phone").val();
-    var partySize = $("input#party").val();
+    var partySize = parseInt($("input#party").val());
     var newCustomer = new Customer(customerName, phoneNumber, partySize);
     var newRestaurant = new Restaurant('Screen Door');
 
-    var custArr = newCustomer.customerInfo();
-    var custArrList =  newRestaurant.restaurantList(custArr);
-     
+    var newCustomerInfo = newCustomer.customerInfo();
+    var customerArrList =  newRestaurant.restaurantList(newCustomerInfo);
+
 
 
     $('ul#list').append('<li class="mdl-list__item"> Thanks ' + newCustomer.customerName + ", you have been added to the list!</li>");
-    $('#time').text(newCustomer.waitTime() + "minutes");
+    $('#time').text(newCustomer.waitTime() + " minutes");
     $("ul#list li").click(function(){
       $(this).remove();
     });
