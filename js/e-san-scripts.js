@@ -59,6 +59,12 @@ $(document).ready(function(){
     $('#about-show').hide();
   });
 
+  $('#about-food-show').click(function() {
+    $('#about-food-hide').show();
+    $('#about-food-show').hide();
+  });
+
+
   $("form#new-input").submit(function(event) {
     event.preventDefault();
     var customerName = $("input#name").val();
