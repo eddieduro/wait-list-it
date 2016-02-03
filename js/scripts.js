@@ -52,6 +52,7 @@ $(document).ready(function(){
   $('.star').hover(function(){
     $(this).addClass("starOverlay");
   });
+  
   $('#review-btn').click(function(){
     $('#new-input').show();
     $('#review-btn').hide();
@@ -73,6 +74,7 @@ $(document).ready(function(){
 
     $('ul#list').append('<li class="mdl-list__item"> Thanks ' + newCustomer.customerName + ", you have been added to the list!</li>");
     $('#time').text(newCustomer.waitTime() + " minutes");
+
     $("ul#list li").click(function(){
       $(this).remove();
     });
