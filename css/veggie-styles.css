@@ -1,6 +1,35 @@
+body {
+  font-family: arial;
+  font-weight: bold;
+  color: white;
+  font-size: 10pt;
+}
+
 div {
-  /*width: 750px;*/
   margin: 0 auto;
+}
+
+.carousel-image {
+  border-radius: 15px;
+  overflow: hidden;
+  height: auto;
+}
+
+.row {
+  width: 740px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.col-sm-4 {
+  width: 240px;
+  height: 165px;
+  background-color: #9FD968;
+  padding: 10px;
+  padding-left: 30px;
+  border-radius: 15px;
+  text-align: center;
+
 }
 
 #logo-image {
@@ -21,12 +50,9 @@ div {
 }
 
 #bodydiv {
-  background-color: #9FD968;
   width: 740px;
   height: 350px;
   margin-top: 10px;
-  padding: 10px;
-  padding-left: 30px;
   border-radius: 15px;
 }
 
@@ -38,6 +64,21 @@ div {
   padding: 15px;
   padding-left: 30px;
   border-radius: 15px;
+  font-weight: normal;
+}
+
+#column-left {
+  background-image: url("../img/veggie-3.jpg");
+}
+
+#column-center {
+  background-image: url("../img/veggie-4.jpg");
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#column-right {
+  background-image: url("../img/veggie-5.jpg");
 }
 
 .btn-success {
