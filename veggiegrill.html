@@ -7,33 +7,36 @@
     <link rel="stylesheet" href="css/veggie-styles.css">
   </head>
   <body>
-    <div id="headerdiv">
-      <p>This is the header.</p>
+    <div id="logo-image">
+    <img src="img/veggie-logo.png">
     </div>
-    <div id="bodydiv">
+    <div id="headerdiv">
+      <p>order locations menu gift cards VG rewards fundraisers jobs</p>
+    </div>
+    <div id="bodydiv" class="carousel slide" data-ride="carousel">
+      <div class="item active">
+        <img src="">
+      </div>
+      <div class="item">
+        <img src="">
+      </div>
       <p>This is the body.</p>
     </div>
     <div id="waitlistdiv">
       <form id="new-input" action="#">
-        <h4>Get on the Waitlist</h4>
+        <p>Add yourself to the waitlist</p>
         <div>
           <label for="name">Name:</label>
           <input type="text" id="name">
-        </div>
-        <br>
-        <div>
           <label for="party">Party Size:</label>
           <input type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="party">
-        </div>
-        <br>
-        <div>
           <label for="phone">Phone #:</label>
           <input type="phone" id="phone">
         </div>
         <br>
-        <button type="submit" id="add-reservation" class="btn">Submit</button>
+        <button type="submit" id="add-reservation" class="btn-success">Submit</button>
       </form>
-      <br>
+      <hr>
       <div id="currentList">
         <ul id="list" class="demo-list-item mdl-list">
         </ul>
