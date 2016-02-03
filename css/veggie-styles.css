@@ -9,6 +9,10 @@ div {
   margin: 0 auto;
 }
 
+input {
+  color: black;
+}
+
 .carousel-image {
   border-radius: 15px;
   overflow: hidden;
