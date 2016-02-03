@@ -64,7 +64,33 @@ Carousel
   width: 100%;
   background-color: #eee;
 }
-.slick-prev:before,
-      .slick-next:before {
-        color: red;
-      }
+
+.logos{
+  height: auto;
+  width:200px;
+}
+
+.slick-slide img {
+  margin-top: 150px;
+  margin-left: 50px;
+}
+
+.slick-prev {
+  height: 20px;
+  left:0;
+}
+
+.slick-next {
+  right:0;
+}
+
+.flexCarousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+#carouselText{
+  color: rgb(0,150,136);
+}
