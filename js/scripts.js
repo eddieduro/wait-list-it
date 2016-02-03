@@ -44,18 +44,22 @@ Customer.prototype.waitTime = function() {
       }
     }
   time += i * 5;
-  console.log(time);
   return time;
 }
 
 $(document).ready(function(){
+
+  $('.star').hover(function(){
+    $(this).addClass("starOverlay");
+  });
+  
   $('#review-btn').click(function(){
     $('#new-input').show();
     $('#review-btn').hide();
   });
 
   $("form#new-input").submit(function(event) {
-      $('#tipue_search_input').tipuesearch();
+
     event.preventDefault();
     var customerName = $("input#name").val();
     var phoneNumber = $("input#phone").val();
@@ -70,16 +74,14 @@ $(document).ready(function(){
 
     $('ul#list').append('<li class="mdl-list__item"> Thanks ' + newCustomer.customerName + ", you have been added to the list!</li>");
     $('#time').text(newCustomer.waitTime() + " minutes");
+
     $("ul#list li").click(function(){
       $(this).remove();
     });
   });
-  $('.star').hover(function(){
-    $(this).addClass("starOverlay");
-  });
-
   $('#arrow').click(function(){
     parent.history.back();
     return false;
   });
+  $('#tipue_search_input').tipuesearch();
 });

@@ -2,21 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+    <title>WaitList it</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	  <link rel="stylesheet" href="https://code.getmdl.io/1.1.0/material.teal-green.min.css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
-
-
-
-<link href="tipuesearch/tipuesearch.css" rel="stylesheet">
-<script src="tipuesearch/tipuesearch_set.js"></script>
-
-
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.0/material.teal-green.min.css">
+    <link href="tipuesearch/tipuesearch.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/landingpage.css">
   </head>
   <body>
+<<<<<<< HEAD
 	<!-- NavBar -->
   	<!-- Always shows a header, even in smaller screens. -->
 	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -59,72 +56,93 @@
         <ul>
 
         </ul>
+=======
+    <!-- Hero Landing -->
+    <div id="heroImg">
+      <div id="iphone"></div>
+      <div class="flexboxHero">
+        <h1 id="heroFont">WaitList It</h1>
+      </div>
+      <div class="flexboxBtn">
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" id="heroBtn1">Check out the app!</button>
+>>>>>>> origin
       </div>
     </div>
+    <!-- NavBar -->
+    	<!-- Always shows a header, even in smaller screens. -->
+  	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  	  <header class="mdl-layout__header">
+  	    <div class="mdl-layout__header-row">
 
-    <div class="flexboxWait">
-      <h2 class="wait-text">Current Wait Time: <span id="time"></span></h2>
-    </div>
+  	      <!-- Title -->
+  	      <span class="mdl-layout-title"></span>
+  	      <!-- Add spacer, to align navigation to the right -->
+  	      <div class="mdl-layout-spacer"></div>
+  	      <!-- Navigation. We hide it in small screens. -->
+  	      <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="">Link</a>
+            <a class="mdl-navigation__link" href="">Link</a>
+            <a class="mdl-navigation__link" href="">Link</a>
+            <a class="mdl-navigation__link" href="">Link</a>
+            <!-- Search Bar -->
+            <form action="search.html" id="search">
+              <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+            </form>
 
-    <!-- Get on the list  -->
-    <div class="flexbox">
-      <button type="button" id="review-btn" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect" >Get on the list!</button>
-    </div>
-    <!-- Search results -->
-    <div id="tipue_search_content"></div>
-    <!-- Form -->
-    <div class="flexboxForm">
-        <form id="new-input" action="#">
-          <div class="mdl-textfield mdl-js-textfield">
-            <label for="name" class="mdl-textfield__label">Name:</label>
-            <input type="text" class="mdl-textfield__input" id="name">
-          </div>
-          <div class="mdl-textfield mdl-js-textfield">
-            <label for="party" class="mdl-textfield__label">Party Size:</label>
-            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="party">
-          </div>
-          <div class="mdl-textfield mdl-js-textfield">
-            <label for="phone" class="mdl-textfield__label">Phone #:</label>
-            <input type="phone" class="mdl-textfield__input" id="phone">
-          </div>
-          <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect" id="add-reservation">Submit</button>
-        </form>
+  	      </nav>
+  	    </div>
+  	  </header>
+  	  <div class="mdl-layout__drawer">
+  	    <span class="mdl-layout-title">Wait List It</span>
+  	    <nav class="mdl-navigation">
+  		    <a class="mdl-navigation__link" href="">Home</a>
+  	      <a class="mdl-navigation__link" href="">Blog</a>
+  	      <a class="mdl-navigation__link" href="">Find More</a>
+  	    </nav>
+  	  </div>
+  	</div>
+    <!-- Main section -->
+    <div class="flexContainer">
+      <div class="mdl-grid text-center">
+        <div class="mdl-cell mdl-cell--4-col">
+          <i class="material-icons gridIcon">watch_later</i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          <br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="mdl-cell mdl-cell--4-col">
+          <i class="material-icons gridIcon">thumb_up</i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          <br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="mdl-cell mdl-cell--4-col">
+          <i class="material-icons gridIcon">home</i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          <br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
       </div>
     </div>
-    <!-- List -->
-    <div class="flexboxList">
-      <div id="currentList">
-        <ul id="list" class="demo-list-item mdl-list">
+    <!-- Carousel Section -->
 
-        </ul>
+    <div class="carouselBg">
+      <div class="flexCarousel">
+        <h2 id="carouselText">A few supporters</h2>
+      </div>
+      <div class="multiple-items">
+        <div><img src="http://seamarketny.com/images/client_logos/logo9c.png" alt="pokpok" class="logos"/></div>
+        <div><img src="http://static1.squarespace.com/static/543eef57e4b04bbe6d9de410/t/543f4502e4b07d76437fd486/1413526254783/" alt="tilt" class="logos"/></div>
+        <div><img src="http://screendoorrestaurant.com/images/screendoor-logo.png" alt="screen door" class="logos"/></div>
+        <div><img src="http://chefstablegroup.com/cache/images/54790a0aa0cfa8d8781827f722f5a3281163bb27.png" alt="lardo" class="logos"/></div>
+        <div><img src="http://static1.squarespace.com/static/53745c10e4b075c0a115ca2a/t/554b002ee4b01ba61b724c0b/1430978607051/" alt="ringside" class="logos"/></div>
+        <div><img src="https://www.bogopod.com/MerchantImages/Logo/4AB26369.png" alt="ruth cris" class="logos"/></div>
       </div>
     </div>
-    <!-- rate your experience -->
-    <div class="rateBg">
-	    <div class="flexRate">
-	    	<h3>Rate your experience</h3>
-	    </div>
-
-	    <div class="flexHr">
-	    	<hr id="rating">
-	    </div>
-
-	    <div class="flexStar">
-	    	<i class="material-icons star">&#xE83A;</i>
-	    	<i class="material-icons star">&#xE83A;</i>
-	    	<i class="material-icons star">&#xE83A;</i>
-	    	<i class="material-icons star">&#xE83A;</i>
-	    </div>
-    </div>
-
-
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="tipuesearch/tipuesearch_content.js"></script>
     <script src="tipuesearch/tipuesearch_set.js"></script>
     <script src="tipuesearch/tipuesearch.min.js"></script>
-    <!--<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
     <script src="https://code.getmdl.io/1.1.0/material.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
-    </script>
+    <script type="text/javascript" src="js/carousel.js"></script>
   </body>
 </html>
