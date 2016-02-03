@@ -33,6 +33,13 @@ Header
   height: 350px;
   max-width: 100%;
 }
+.screen-door {
+  background: url('../img/screen_door.jpg') no-repeat center;
+  background-size: cover;
+  padding-top: 100px;
+  height: 350px;
+  max-width: 100%;
+}
 .home {
   background: url('../img/dining.jpg') no-repeat center;
   background-size: cover;
