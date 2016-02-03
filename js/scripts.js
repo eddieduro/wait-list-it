@@ -16,7 +16,7 @@ Restaurant.prototype.restaurantList = function() {
   for (var i = 0; i < customers.length; i++) {
     this.customerList.push(customers[i]);
   }
-  // return this.customerList;
+  return this.customerList;
 }
 
 Customer.prototype.customerInfo = function() {
@@ -66,7 +66,7 @@ $(document).ready(function(){
     var newCustomerInfo = newCustomer.customerInfo();
     var customerArrList =  newRestaurant.restaurantList(newCustomerInfo);
 
-
+    $('ul#list').empty();
 
     $('ul#list').append('<li class="mdl-list__item"> Thanks ' + newCustomer.customerName + ", you have been added to the list!</li>");
     $('#time').text(newCustomer.waitTime() + " minutes");

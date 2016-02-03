@@ -19,11 +19,32 @@ nav
 /*==========
 Header
 ============*/
-.hero {
+.ramen {
   background: url('../img/ramen.jpg') no-repeat center;
-  background-size: conver;
+  background-size: cover;
   padding-top: 100px;
-  height: 300px;
+  height: 350px;
+  max-width: 100%;
+}
+.imperial {
+  background: url('../img/imperial.jpg') no-repeat center;
+  background-size: cover;
+  padding-top: 100px;
+  height: 350px;
+  max-width: 100%;
+}
+.home {
+  background: url('../img/dining.jpg') no-repeat center;
+  background-size: cover;
+  padding-top: 100px;
+  height: 350px;
+  max-width: 100%;
+}
+.pokpok {
+  background: url('../img/pokpok.jpg') no-repeat center;
+  background-size: cover;
+  padding-top: 100px;
+  height: 350px;
   max-width: 100%;
 }
 /*========
@@ -49,19 +70,45 @@ form
   justify-content: center;
   align-items: center;
   height: 0px;
+  width: 100%;
   padding-bottom: 100px;
 }
 #new-input{
   display: none;
 }
+.mdl-js-textfield {
+  width: 25%;
+  margin-left: 5%;
+}
+/*========
+General
+==========*/
+.flexbox button {
+  height: 80px;
+  width: 260px;
+  padding: 10px;
+  font-size: 1.5em;
+  margin-top: 200px;
+}
+.flexboxForm button {
+  height: 50px;
+  width: 220px;
+  padding: 10px;
+  font-size: 1.3em;
+  margin-top: 20px;
+  margin-left: 35%;
+}
 /*=========
 list items
 ==========*/
-.flexboxList{
+.flexboxList {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
+  height: 170px;
+  width: 80%;
+  margin-left: 10%;
+  padding-bottom: 30px;
 }
 .wait-text {
   margin-top: 100px;
@@ -69,14 +116,13 @@ list items
 }
 
 #list {
-  font-size: 18pt;
   font-weight: bold;
   color: black;
   padding-left: 3%;
 }
 
 .mdl-list__item{
-  line-height: 24px;
+  font-size: 1.8em;
 }
 #currentList{
   /*display:none;*/
@@ -120,4 +166,14 @@ Rating section
 }
 hr#rating {
   width: 50%;
+}
+
+/*==========
+Blog section
+============*/
+.mdl-card {
+   width: 70%;
+   margin-left: 15%;
+   margin-top: 3%;
+   padding: 10px;
 }
