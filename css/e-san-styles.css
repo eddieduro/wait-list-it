@@ -1,0 +1,59 @@
+body{
+  background-color: #732727;
+  color: black;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid black;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.jumbotron {
+  text-align: center;
+  color: red;
+  text-shadow: 1px 1px 1px black;
+  background-image: url("http://static1.squarespace.com/static/53835c67e4b0b3a648f0036d/t/539f889ee4b063c45911eaf6/1374002907458/IMG_4224-retouch.jpg");
+}
+
+.btn {
+  background: grey;
+  -webkit-border-radius: 20;
+  -moz-border-radius: 20;
+  -webkit-box-shadow: 0px 1px 3px #666666;
+  -moz-box-shadow: 0px 1px 3px #666666;
+  box-shadow: 0px 1px 3px #666666;
+  color: inherit;
+  font-size: 16px;
+  padding: 5px 15px 5px 15px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #f5e3bf;
+}
+
+#center-div {
+  text-align: center;
+}
+
+#time {
+  font-size: 16pt;
+}
+
+#about-hide {
+  display: none;
+}
+
+#about-food-hide {
+  display: none;
+}
+
+#list {
+  font-size: 16pt;
+  color: black;
+  padding-left: 3%;
+}
