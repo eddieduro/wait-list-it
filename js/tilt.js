@@ -54,17 +54,6 @@ $(document).ready(function(){
     $('#review-btn').hide();
   });
 
-  $('#about-show').click(function() {
-    $('#about-hide').show();
-    $('#about-show').hide();
-  });
-
-  $('#about-food-show').click(function() {
-    $('#about-food-hide').show();
-    $('#about-food-show').hide();
-  });
-
-
   $("form#new-input").submit(function(event) {
     event.preventDefault();
     var customerName = $("input#name").val();

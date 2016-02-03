@@ -7,21 +7,19 @@
     <link rel="stylesheet" href="css/tilt-styles.css">
   </head>
   <body>
-
+    <div class="jumbotron">
+    <p><img src="img/tilt-logo.png" id="tilt-logo-img"></p>
+    </div>
+    <div class="jumbotron2">
+    </div>
     <div class="container">
-
-      <div class="jumbotron">
-      <p><img src="img/tilt-logo.png" id="tilt-logo-img"></p>
-
-      </div>
       <div class="row">
         <div class="col-sm-6" id="left-column">
-          <img src="img/tilt-menu.png">
+          <img src="img/tilt-menu.png" id="tilt-menu-img">
         </div>
         <div class="col-sm-6" id="right-column">
           <form id="new-input" action="#">
-            <h4>Looking to dine in? Add yourself to our waitlist:</h4>
-            <hr>
+            <h4>Get on the Waitlist</h4>
             <div>
               <label for="name">Name:</label>
               <input type="text" id="name">
@@ -39,6 +37,12 @@
             <br>
             <button type="submit" id="add-reservation" class="btn">Submit</button>
           </form>
+          <br>
+          <div id="currentList">
+            <ul id="list" class="demo-list-item mdl-list">
+            </ul>
+          </div>
+          <h5>Your current wait time is: <span id="time"></span></h5>
         </div>
       </div>
     </div>
@@ -49,7 +53,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <!--<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
     <script src="https://code.getmdl.io/1.1.0/material.min.js"></script>
-    <script type="text/javascript" src="js/tilt-scripts.js">
+    <script type="text/javascript" src="js/tilt.js">
     </script>
   </body>
 </html>
