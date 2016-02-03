@@ -13,35 +13,31 @@
     <div id="bodydiv">
       <p>This is the body.</p>
     </div>
-
-
+    <div id="waitlistdiv">
+      <form id="new-input" action="#">
+        <h4>Get on the Waitlist</h4>
         <div>
-          <form id="new-input" action="#">
-            <h4>Get on the Waitlist</h4>
-            <div>
-              <label for="name">Name:</label>
-              <input type="text" id="name">
-            </div>
-            <br>
-            <div>
-              <label for="party">Party Size:</label>
-              <input type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="party">
-            </div>
-            <br>
-            <div>
-              <label for="phone">Phone #:</label>
-              <input type="phone" id="phone">
-            </div>
-            <br>
-            <button type="submit" id="add-reservation" class="btn">Submit</button>
-          </form>
-          <br>
-          <div id="currentList">
-            <ul id="list" class="demo-list-item mdl-list">
-            </ul>
-          </div>
-          <h5>Your current wait time is: <span id="time"></span></h5>
+          <label for="name">Name:</label>
+          <input type="text" id="name">
         </div>
+        <br>
+        <div>
+          <label for="party">Party Size:</label>
+          <input type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="party">
+        </div>
+        <br>
+        <div>
+          <label for="phone">Phone #:</label>
+          <input type="phone" id="phone">
+        </div>
+        <br>
+        <button type="submit" id="add-reservation" class="btn">Submit</button>
+      </form>
+      <br>
+      <div id="currentList">
+        <ul id="list" class="demo-list-item mdl-list">
+        </ul>
+      </div>
     </div>
 
 
