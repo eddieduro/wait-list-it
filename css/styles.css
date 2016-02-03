@@ -10,7 +10,12 @@ body{
 form {
   margin-top: 100px;
 }
-
+/*==========
+nav
+============*/
+#search{
+  margin-top: 0px;
+}
 /*==========
 Header
 ============*/
@@ -162,6 +167,7 @@ Rating section
 hr#rating {
   width: 50%;
 }
+
 /*==========
 Blog section
 ============*/
