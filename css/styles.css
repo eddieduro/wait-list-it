@@ -21,10 +21,10 @@ Header
 ============*/
 .hero {
   background: url('../img/ramen.jpg') no-repeat center;
-  background-size: conver;
+  background-size: cover;
   padding-top: 100px;
-  height: 300px;
-  max-width: 100%;
+  height: 350px;
+  width: 100%;
 }
 /*========
 Wait time

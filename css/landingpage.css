@@ -5,6 +5,7 @@ Hero
   background: url('../img/foodHero.jpeg') center no-repeat;
   background-size: cover;
   height: 600px;
+  width: 100%;
 }
 
 .flexboxHero {
@@ -38,3 +39,32 @@ Hero
   display: block;
   top: -100px;
 }
+
+/*==============
+3 column section
+===============*/
+.flexContainer{
+  margin-top: 200px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.gridIcon {
+  font-size: 60pt;
+}
+
+/*=============
+Carousel
+===============*/
+.carouselBg {
+  margin-top: 200px;
+  height: 500px;
+  width: 100%;
+  background-color: #eee;
+}
+.slick-prev:before,
+      .slick-next:before {
+        color: red;
+      }
