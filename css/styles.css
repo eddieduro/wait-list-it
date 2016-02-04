@@ -26,6 +26,13 @@ Header
   height: 350px;
   max-width: 100%;
 }
+.little-bird {
+  background: url('../img/littlebird.jpg') no-repeat center;
+  background-size: cover;
+  padding-top: 100px;
+  height: 350px;
+  max-width: 100%;
+}
 .imperial {
   background: url('../img/imperial.jpg') no-repeat center;
   background-size: cover;
