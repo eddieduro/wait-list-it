@@ -33,6 +33,13 @@ Header
   height: 350px;
   max-width: 100%;
 }
+.maurice {
+  background: url('../img/maurice.jpg') no-repeat center;
+  background-size: cover;
+  padding-top: 100px;
+  height: 350px;
+  max-width: 100%;
+}
 .adina {
   background: url('../img/adina.jpg') no-repeat center;
   background-size: cover;
