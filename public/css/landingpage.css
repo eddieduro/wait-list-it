@@ -1,6 +1,11 @@
 /*=====
 Hero
 =======*/
+#appBtn {
+  color: white;
+  text-decoration: none;
+}
+
 #heroImg{
   background: url('../img/foodHero.jpeg') center no-repeat;
   background-size: cover;
@@ -76,7 +81,7 @@ Carousel
 }
 
 .slick-prev {
-  height: 20px;
+/*  height: 20px;*/
   left:0;
 }
 
