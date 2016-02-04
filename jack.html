@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	  <link rel="stylesheet" href="https://code.getmdl.io/1.1.0/material.teal-green.min.css">
-    <link href="tipuesearch/tipuesearch.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/styles.css">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.1.0/material.brown-green.min.css">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
 	<!-- NavBar -->
@@ -15,21 +15,18 @@
 	  <header class="mdl-layout__header">
 	    <div class="mdl-layout__header-row">
 	      <!-- Title -->
-	      <span class="mdl-layout-title">Boxer Ramen</span>
+	      <span class="mdl-layout-title">Jack's</span>
 	      <!-- Add spacer, to align navigation to the right -->
 	      <div class="mdl-layout-spacer"></div>
 	      <!-- Navigation. We hide it in small screens. -->
 	      <nav class="mdl-navigation">
-          <form action="search.html" id="search">
-            <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
-          </form>
-
+	        <i class="material-icons">search</i>
 	      </nav>
 	    </div>
 	  </header>
 	  <div class="mdl-layout__drawer">
 	    <span class="mdl-layout-title">Wait List It</span>
-	    <nav class="mdl-navigation">
+      <nav class="mdl-navigation">
         <a class="mdl-navigation__link" href="index.html">Home</a>
         <a class="mdl-navigation__link" href="blog.html">Blog</a>
         <a class="mdl-navigation__link" href="adina.html">Adina</a>
@@ -53,7 +50,7 @@
 	  </div>
 	</div>
   <!-- Hero -->
-	<div class="hero ramen">
+	<div class="jack">
 		<!--  <h1>Screen Door</h1>
 	    <h2>Reserve Your Table!!!</h2>
 	    <p>Enter your name, party size, and phone# and we will let you know how many people are in front of you and approxiamtely how long you will have to wait for your table.</p> -->
@@ -75,8 +72,6 @@
     <div class="flexbox">
       <button type="button" id="review-btn" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect" >Get on the list!</button>
     </div>
-    <!-- Search results -->
-    <div id="tipue_search_content"></div>
     <!-- Form -->
     <div class="flexboxForm">
         <form id="new-input" action="#">
@@ -121,14 +116,10 @@
 	    	<i class="material-icons star">&#xE83A;</i>
 	    </div>
     </div>
-
-
-    <script type="text/javascript" src="
-    https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
-    <script src="tipuesearch/tipuesearch_content.js"></script>
-    <script src="tipuesearch/tipuesearch_set.js"></script>
-    <script src="tipuesearch/tipuesearch.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!--<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
     <script src="https://code.getmdl.io/1.1.0/material.min.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/scripts.js">
+    </script>
   </body>
 </html>

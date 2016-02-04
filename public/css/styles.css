@@ -19,6 +19,56 @@ nav
 /*==========
 Header
 ============*/
+.paley {
+  background: url('../img/Paleys.jpg') no-repeat center;
+  background-size: cover;
+  padding-top: 100px;
+  height: 350px;
+  max-width: 100%;
+  }
+
+.jack {
+  background: url('../img/jack.jpg') no-repeat center;
+  background-size: cover;
+  padding-top: 100px;
+  height: 350px;
+  max-width: 100%;
+  }
+.adina {
+  background: url('../img/adina.jpg') no-repeat center;
+  background-size: cover;
+  padding-top: 100px;
+  height: 350px;
+  max-width: 100%;
+  }
+.departure {
+  background: url('../img/departure.jpg') no-repeat center;
+  background-size: cover;
+  padding-top: 100px;
+  height: 350px;
+  max-width: 100%;
+  }
+.little-bird {
+  background: url('../img/littlebird.jpg') no-repeat center;
+  background-size: cover;
+  padding-top: 100px;
+  height: 350px;
+  max-width: 100%;
+  }
+.maurice {
+  background: url('../img/maurice.jpg') no-repeat center;
+  background-size: cover;
+  padding-top: 100px;
+  height: 350px;
+  max-width: 100%;
+  }
+.atuala {
+  background: url('../img/Ataula.jpg') no-repeat center;
+  background-size: cover;
+  padding-top: 100px;
+  height: 350px;
+  max-width: 100%;
+  }
 .ramen {
   background: url('../img/ramen.jpg') no-repeat center;
   background-size: cover;
@@ -28,6 +78,34 @@ Header
 }
 .imperial {
   background: url('../img/imperial.jpg') no-repeat center;
+  background-size: cover;
+  padding-top: 100px;
+  height: 350px;
+  max-width: 100%;
+}
+.ruth-chris {
+  background: url('../img/ruth-chris.jpg') no-repeat center;
+  background-size: cover;
+  padding-top: 100px;
+  height: 350px;
+  max-width: 100%;
+}
+.fish-house{
+  background: url('../img/fish-house.jpg') no-repeat center;
+  background-size: cover;
+  padding-top: 100px;
+  height: 350px;
+  max-width: 100%;
+}
+.screen-door {
+  background: url('../img/screen_door.jpg') no-repeat center;
+  background-size: cover;
+  padding-top: 100px;
+  height: 350px;
+  max-width: 100%;
+}
+.lardo {
+  background: url('../img/lardo.jpg') no-repeat center;
   background-size: cover;
   padding-top: 100px;
   height: 350px;
