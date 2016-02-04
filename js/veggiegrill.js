@@ -68,7 +68,7 @@ $(document).ready(function(){
 
 
     $('ul#list').append('<li class="mdl-list__item"> Thanks ' + newCustomer.customerName + ", you have been added to the list!</li>");
-    $('#time').text(newCustomer.waitTime() + " minutes");
+    $('#time').text("Your current wait time is: " + newCustomer.waitTime() + " minutes");
     $("ul#list li").click(function(){
       $(this).remove();
     });

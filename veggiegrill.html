@@ -2,47 +2,71 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>VeggieGrill</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/veggie-styles.css">
   </head>
   <body>
-    <div id="headerdiv">
-      <p>This is the header.</p>
-    </div>
-    <div id="bodydiv">
-      <p>This is the body.</p>
-    </div>
-    <div id="waitlistdiv">
-      <form id="new-input" action="#">
-        <h4>Get on the Waitlist</h4>
-        <div>
-          <label for="name">Name:</label>
-          <input type="text" id="name">
+    <div class="container">
+      <div id="logo-image">
+      <img src="img/veggie-logo.png">
+      </div>
+      <div id="headerdiv">
+        <p>order locations menu gift cards VG rewards fundraisers jobs</p>
+      </div>
+      <div id="bodydiv" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#bodydiv" data-slide-to="0" class="active"></li>
+          <li data-target="#bodydiv" data-slide-to="1"></li>
+        </ol>
+
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="img/veggie-1.jpg" class="carousel-image">
+          </div>
+          <div class="item">
+            <img src="img/veggie-2.jpg" class="carousel-image">
+          </div>
         </div>
-        <br>
-        <div>
-          <label for="party">Party Size:</label>
-          <input type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="party">
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4" id="column-left">
         </div>
-        <br>
-        <div>
-          <label for="phone">Phone #:</label>
-          <input type="phone" id="phone">
+        <div class="col-sm-4" id="column-center">
         </div>
-        <br>
-        <button type="submit" id="add-reservation" class="btn">Submit</button>
-      </form>
-      <br>
-      <div id="currentList">
-        <ul id="list" class="demo-list-item mdl-list">
-        </ul>
+        <div class="col-sm-4" id="column-right">
+        </div>
+      </div>
+
+      <div id="waitlistdiv">
+        <form id="new-input" action="#">
+          <p>Add yourself to the waitlist</p>
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+            <label for="party">Party Size:</label>
+            <input type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="party">
+            <label for="phone">Phone #:</label>
+            <input type="phone" id="phone">
+          </div>
+          <br>
+          <button type="submit" id="add-reservation" class="btn-success">Submit</button>
+        </form>
+        <hr>
+        <div id="currentList">
+          <ul id="list" class="demo-list-item mdl-list">
+          </ul>
+        </div>
+        <p><span id="time"></span></p>
       </div>
     </div>
 
 
+
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <!--<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="https://code.getmdl.io/1.1.0/material.min.js"></script>
     <script type="text/javascript" src="js/veggiegrill.js">
     </script>
