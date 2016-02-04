@@ -1,1 +1,0 @@
-var YelpApi = require('yelp_api');
