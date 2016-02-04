@@ -46,5 +46,11 @@ var tipuesearch = {
      {"title": "Tilt",
      "text": "", "tags": "burgers, pastries, pearl, drinks",
      "url": "http://localhost:3000/tilt.html"},
+     {"title": "Paley",
+     "text": "Paley’s Place offers Pacific Northwest bistro fare, served in the warm and inviting setting of a Victorian Home in Portland’s Northwest District.", "tags": "nw, local, cocktails, french, raw, victorian",
+     "url": "http://localhost:3000/paley.html"},
+     {"title": "Maurice",
+     "text": "A Modern Pastry Luncheonette bound by old world charm. Located in the Southwest corridor of downtown Portland, on a quiet tree lined street amid the bustle of bicycles, the iconic streetcar and a bevy of foot traffic.", "tags": "french, pastries",
+     "url": "http://localhost:3000/maurice.html"},
    ]
  };
