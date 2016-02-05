@@ -203,8 +203,9 @@ list items
 .mdl-list__item{
   font-size: 1.8em;
 }
-#currentList{
-  /*display:none;*/
+#carouselText h2 {
+  margin-top: 10px;
+  padding-top: 80px;
 }
 
 /*==========
