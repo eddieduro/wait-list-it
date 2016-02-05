@@ -52,11 +52,15 @@ $(document).ready(function(){
   $('.star').hover(function(){
     $(this).addClass("starOverlay");
   });
-  
+
   $('#review-btn').click(function(){
     $('#new-input').show();
     $('#review-btn').hide();
   });
+
+  $('#heroBtn1').click(function() {
+  window.open('https://play.google.com/store/apps/category/LIFESTYLE?hl=en');
+});
 
   $("form#new-input").submit(function(event) {
 
