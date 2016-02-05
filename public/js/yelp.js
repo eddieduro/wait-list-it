@@ -14,8 +14,9 @@ var auth = {
     }
 };
 
-var terms = 'food';
-var near = 'Portland';
+var terms = 'restaurant';
+var near = 'Portland, OR';
+var radius_filter = "10";
 
 var accessor = {
     consumerSecret : auth.consumerSecret,
@@ -42,13 +43,4 @@ OAuth.SignatureMethod.sign(message, accessor);
 var parameterMap = OAuth.getParameterMap(message.parameters);
 console.log(parameterMap);
 
-$.ajax({
-    'url' : message.action,
-    'data' : parameterMap,
-    'dataType' : 'jsonp',
-    'jsonpCallback' : 'cb',
-    'success' : function(data, textStats, XMLHttpRequest) {
-        console.log(data);
-        $("body").append(data);
-    }
-});
+
