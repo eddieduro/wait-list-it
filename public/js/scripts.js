@@ -65,7 +65,7 @@ $(document).ready(function(){
     var phoneNumber = $("input#phone").val();
     var partySize = parseInt($("input#party").val());
     var newCustomer = new Customer(customerName, phoneNumber, partySize);
-    var newRestaurant = new Restaurant('Screen Door');
+    var newRestaurant = new Restaurant();
 
     var newCustomerInfo = newCustomer.customerInfo();
     var customerArrList =  newRestaurant.restaurantList(newCustomerInfo);

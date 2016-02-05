@@ -42,7 +42,6 @@ yelp.business('yelp-portland', function(err, data) {
 });
 
 
-$.post('/yelp/api', params, function(response) { myData = response })
 // var app = http.createServer(function(request, response){
 // 	fs.readFile(__dirname + "boxer.html", "utf-8", function(err, data){
 // 		response.writeHead(200, {'Content-Type': 'text/html'});
