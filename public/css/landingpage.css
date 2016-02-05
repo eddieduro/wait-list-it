@@ -1,0 +1,101 @@
+/*=====
+Hero
+=======*/
+#appBtn {
+  color: white;
+  text-decoration: none;
+}
+
+#heroImg{
+  background: url('../img/foodHero.jpeg') center no-repeat;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+}
+
+.flexboxHero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+
+/*#iphone {
+  background: url('../img/iphone.gif') no-repeat;
+  background-size: contain;
+  height: 400px;
+  width: 100%;
+  display: inline;
+  position: absolute;
+}*/
+#heroFont {
+  color: white;
+  font-size: 80pt;
+}
+
+.flexboxBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0px;
+}
+
+#heroBtn1{
+  display: block;
+  top: -100px;
+}
+
+/*==============
+3 column section
+===============*/
+.flexContainer{
+  margin-top: 200px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.gridIcon {
+  font-size: 60pt;
+}
+
+/*=============
+Carousel
+===============*/
+.carouselBg {
+  margin-top: 200px;
+  height: 500px;
+  width: 100%;
+  background-color: #eee;
+}
+
+.logos{
+  height: auto;
+  width:200px;
+}
+
+.slick-slide img {
+  margin-top: 150px;
+  margin-left: 50px;
+}
+
+.slick-prev {
+/*  height: 20px;*/
+  left:0;
+}
+
+.slick-next {
+  right:0;
+}
+
+.flexCarousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+#carouselText{
+  color: rgb(0,150,136);
+}

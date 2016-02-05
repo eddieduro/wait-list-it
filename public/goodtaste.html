@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chen's Good Taste Restaurant</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	  <link rel="stylesheet" href="https://code.getmdl.io/1.1.0/material.teal-green.min.css">
+    <link href="tipuesearch/tipuesearch.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/goodtaste.css">
+  </head>
+  <body>
+    <!-- NavBar -->
+    <!-- Always shows a header, even in smaller screens. -->
+  	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  	  <header class="mdl-layout__header">
+  	    <div class="mdl-layout__header-row">
+  	      <!-- Title -->
+  	      <span class="mdl-layout-title">Chen's Good Taste</span>
+  	      <!-- Add spacer, to align navigation to the right -->
+  	      <div class="mdl-layout-spacer"></div>
+  	      <!-- Navigation. We hide it in small screens. -->
+  	      <nav class="mdl-navigation">
+            <form action="search.html" id="search">
+              <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+            </form>
+  	      </nav>
+  	    </div>
+  	  </header>
+  	  <div class="mdl-layout__drawer">
+  	    <span class="mdl-layout-title">Wait List It</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="index.html">Home</a>
+          <a class="mdl-navigation__link" href="blog.html">Blog</a>
+          <a class="mdl-navigation__link" href="adina.html">Adina</a>
+          <a class="mdl-navigation__link" href="ataula.html">Ataula</a>
+          <a class="mdl-navigation__link" href="boxer.html">Boxer Ramen</a>
+          <a class="mdl-navigation__link" href="goodtaste.html">Chen's Good Taste</a>
+          <a class="mdl-navigation__link" href="departure.html">Departure</a>
+          <a class="mdl-navigation__link" href="e-san.html">E-san</a>
+          <a class="mdl-navigation__link" href="fishhouse.html">Fish House</a>
+          <a class="mdl-navigation__link" href="imperial.html">Imperial</a>
+          <a class="mdl-navigation__link" href="lardo.html">Lardo</a>
+          <a class="mdl-navigation__link" href="little-bird.html">Little Bird Bistro</a>
+          <a class="mdl-navigation__link" href="maurice.html">Maurice</a>
+          <a class="mdl-navigation__link" href="paley.html">Paley's Place</a>
+          <a class="mdl-navigation__link" href="jack.html">Restaurant St. Jack</a>
+          <a class="mdl-navigation__link" href="ruth-chris.html">Ruth Chris</a>
+          <a class="mdl-navigation__link" href="screen_door.html">Screen Door</a>
+          <a class="mdl-navigation__link" href="tilt.html">Tilt</a>
+          <a class="mdl-navigation__link" href="veggiegrill.html">Veggie Grill</a>
+        </nav>
+  	  </div>
+  	</div>
+    <!-- Hero -->
+    <div class="container">
+      <div id="gt-header">
+      <h1>Chen's Good Taste</h1>
+      <p><strong>Address</strong>: 18 NW 4th Ave, Portland, OR 97209 - <strong>Phone:</strong>(503) 223-3838</p>
+      <hr>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <img src="img/goodtaste-1.jpg">
+          <img src="img/goodtaste-2.jpg">
+          <img src="img/goodtaste-3.jpg">
+        </div>
+        <div class="col-sm-3">
+          <form id="new-input" action="#">
+            <p>Reserve some seating before you come. Add yourself to the waitlist!</p>
+            <div>
+              <label for="name">Name:</label>
+              <input type="text" id="name">
+              <br>
+              <label for="party">Party Size:</label>
+              <input type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="party">
+              <br>
+              <label for="phone">Phone #:</label>
+              <input type="phone" id="phone">
+            </div>
+            <br>
+            <button type="submit" id="add-reservation" class="btn-danger">Submit</button>
+          </form>
+          <br>
+          <div id="currentList">
+            <ul id="list" class="demo-list-item mdl-list">
+            </ul>
+          </div>
+          <p><strong>Current Wait Time</strong>: <span id="time"></span></p>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-sm-6" id="left-column">
+          <h4>Menu</h4>
+          <hr>
+          <ul><p><strong>Super Bowl (A) $9.50</strong></p>
+            <p><em>Roasted Duck, Roasted Pork, BBQ Pork Wonton Noodle Soup</em></p>
+            <p><strong>Super Bowl (B) $8.50</strong></p>
+            <p><em>Beef Tripes, Stewed Beef Wonton Noodle Soup</em></p>
+            <br>
+            <p><strong>Congee</strong></p>
+            <li>Preserved Eggs with Pork Congee - $4.25</li>
+            <li>Pork Giblets Congee - $4.25</li>
+            <li>Sam Pan Congee - $4.50</li>
+            <li>Seafood Congee - $4.50</li>
+            <li>Plain Congee - $2.00</li>
+            <li>Add Preserved Duck Egg (each) - $1.50</li>
+            <br>
+            <p><strong>Beef</strong></p>
+            <li>Beef with Chinese Brocolli - $9.95</li>
+            <li>Mongolian Beef - $9.95</li>
+            <li>Kung Pao Beef - $9.95</li>
+            <li>Beef with Black Bean and Garlic Sauce - $9.95</li>
+            <br>
+            <p><strong>Pork</strong></p>
+            <li>Pepper and Salt Pork Chop - $9.95</li>
+            <li>Pork Chop with Peking Sauce - $9.95</li>
+            <li>BBQ Pork with Scrambled Egg - $9.95</li>
+            <li>Sweet and Sour Pork - $9.95</li>
+            <br>
+            <p><strong>Poultry</strong></p>
+            <li>Chicken with Ginger and Special Sauce - $7.95</li>
+            <li>Kung Pao Chicken - $7.95</li>
+            <li>Chicken with Cashew Nut - $7.95</li>
+            <li>General Tso's Chicken - $7.95</li>
+            <li>Sweet and Sour Chicken - $7.95</li>
+        </div>
+        <div class="col-sm-6" id="right-column">
+          <h4>Menu #2</h4>
+          <hr>
+          <ul><strong>Tofu and Vegetables</strong>
+            <li>Deep Fried Tofu w/ Brown Sauce - $7.95</li>
+            <li>Bok Choy with Chicken Oil - $7.95</li>
+            <li>Spinach with Garlic Sauce - $7.95</li>
+            <li>Chinese Brocolli w/ Oyster Sauce - $7.95</li>
+            <br>
+            <p><strong>Clay Pot</strong></p>
+            <li>Five Spice Beef Brisket Pot - $9.50</li>
+            <li>Seafood Bean Curds Pot - $9.50</li>
+            <li>Salted Fish and Chicken w/ Eggplant Pot - $9.50</li>
+            <br>
+            <p><strong>Pan Fried Noodles and Chow Fun</strong></p>
+            <li>House Special Chow Mein - $9.50</li>
+            <li>House Special Chow Fun - $9.50</li>
+            <li>Combination Meat Rice Cake - $8.95</li>
+            <li>Singapore Style Fried Rice Stick (Dry) - $9.50</li>
+            <li>Extra with Gravy Sauce - $1.00</li>
+            <li>Plain Fried Noodle - $5.00</li>
+            <br>
+            <p><strong>Seafood</strong></p>
+            <li>Kung Pao Shrimps - $10.95</li>
+            <li>Pepper Salted Rawns in Shell - $10.95</li>
+            <li>Shrimp with Black Bean Sauce - $10.95</li>
+            <li>Tripe Delight - $10.95</li>
+            <li>Dried Scallops over Bok Choy - $10.95</li>
+            <li>Pepper and Salt Fish - $10.95</li>
+            <li>Pan Fried Whole Sole Fish - $10.95</li>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://code.getmdl.io/1.1.0/material.min.js"></script>
+    <script src="tipuesearch/tipuesearch_content.js"></script>
+    <script src="tipuesearch/tipuesearch_set.js"></script>
+    <script src="tipuesearch/tipuesearch.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js">
+    </script>
+  </body>
+</html>
